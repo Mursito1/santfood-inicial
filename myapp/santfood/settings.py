@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-uis$_er8ze&n7k39-4d-y=sxr#4s*g#l#!jw)etnk*2j-2@m1y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
+ALLOWED_HOSTS = ['localhost', '.vercel.app']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.postgres',
     'santfood'
 ]
 
@@ -77,8 +78,12 @@ WSGI_APPLICATION = 'santfood.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'vCrfVpPJXqjxwXotFvYYlHnWLHsoBmAS',
+        'HOST': 'viaduct.proxy.rlwy.net',
+        'PORT': '40502',
     }
 }
 

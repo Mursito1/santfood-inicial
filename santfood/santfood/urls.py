@@ -1,6 +1,5 @@
 from .views import inicio, nosotros, menus, registro
-from django.contrib import admin
-from django.urls import path
+from django.urls import path # type: ignore
 
 urlpatterns = [
     path('', inicio, name = 'inicio'),

@@ -1,19 +1,19 @@
 {
     "routes": [
         {
-            "src": "/",
+            "src": "inicio",
             "dest": "/"
         },
         {
-            "src": "/menus",
+            "src": "menus",
             "dest": "/"
         },
         {
-            "src": "/nosotros",
+            "src": "nosotros",
             "dest": "/"
         },
         {
-            "src": "/registro",
+            "src": "registro",
             "dest": "/"
         }
     ]
